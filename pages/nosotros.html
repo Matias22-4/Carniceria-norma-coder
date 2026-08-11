@@ -3,30 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Nosotros | Norma</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
-        <a href="../index.html" aria aria-label="Inicio" title="Inicio">
-        <figure> 
-            <img src="./assets/logo-norma.png" alt="Norma - Carniceria y Verduleria,en el barrio de Saveedra" title="Logo-Norma">
-        </figure>
-     </a>
-     <h1>Norma | Nosotros</h1>
-     <nav>
-        <ul>
-            <li>
-                    <a href="#" aria aria-label="Carniceria" title="Carniceria">Carniceria</a>
-                </li>
-                    <a href="./verduleria.html" aria-label="Verduleria" title="Verduleria">Verduleria</a>
-            <li>  
-                <a href="./contacto.html" aria-label="Contacto" title="Contacto">Contacto</a>
-                </li>
-            <li> 
-                <a href="#" aria-label="Nosotros" title="Nosotros">Nosotros</a>
-                </li>
-        </ul>
-     </nav>
+        <a href="../index.html" aria-label="Inicio" title="Inicio">
+            <figure>
+                <img src="../assets/tipos/logo-norma.png" alt="Norma - Carnicería y Verdulería, en el barrio de Saavedra" title="Logo Norma">
+            </figure>
+        </a>
+
+        <h1>Norma | Nosotros</h1>
+
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="./carniceria.html" title="Carnicería">Carnicería</a></li>
+                <li><a href="./verduleria.html" title="Verdulería">Verdulería</a></li>
+                <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+                <li><a href="./nosotros.html" aria-current="page" title="Nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <section id="nuestra-historia">
+            <h2>Nuestra historia</h2>
+            <p>
+                Norma nació como un pequeño local de barrio en Saavedra y, con el paso de los años,
+                se convirtió en un punto de referencia para quienes buscan carne y verdura fresca
+                con atención de cercanía. Hoy seguimos manteniendo esa misma esencia familiar.
+            </p>
+        </section>
+
+        <section id="nuestros-valores">
+            <h2>Nuestros valores</h2>
+
+            <article>
+                <h3>Frescura</h3>
+                <p>Trabajamos día a día con proveedores de confianza para garantizar productos frescos.</p>
+            </article>
+
+            <article>
+                <h3>Cercanía</h3>
+                <p>Conocemos a nuestros clientes y sus preferencias, como en cualquier negocio de barrio.</p>
+            </article>
+
+            <article>
+                <h3>Compromiso</h3>
+                <p>Cuidamos cada detalle, desde la selección de la mercadería hasta la atención en el mostrador.</p>
+            </article>
+        </section>
+
+        <section id="equipo">
+            <h2>Nuestro equipo</h2>
+            <p>
+                Un grupo de personas apasionadas por lo que hacen, con años de experiencia
+                en el rubro y siempre dispuestas a asesorarte sobre el corte o la verdura
+                que mejor se adapte a lo que necesitás.
+            </p>
+        </section>
+
+        <section id="trayectoria">
+            <h2>Nuestra trayectoria</h2>
+            <article>
+                <h3>Los inicios</h3>
+                <p>Norma abrió sus puertas como una pequeña carnicería familiar en Saavedra.</p>
+            </article>
+            <article>
+                <h3>Crecimiento</h3>
+                <p>Con el tiempo sumamos la verdulería, para ofrecer todo lo necesario en un mismo lugar.</p>
+            </article>
+            <article>
+                <h3>Hoy</h3>
+                <p>Seguimos siendo un negocio de barrio, con la misma dedicación del primer día.</p>
+            </article>
+        </section>
+
+        <section id="compromiso-barrio">
+            <h2>Compromiso con el barrio</h2>
+            <p>
+                Creemos en el comercio de cercanía: apoyamos a proveedores locales, generamos
+                trabajo en el barrio y buscamos construir una relación de confianza duradera
+                con cada uno de nuestros vecinos y clientes.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Carnicería y Verdulería Norma</p>
+        <p>&copy; <span id="year"></span> Todos los derechos reservados.</p>
+        <address>Barrio de Saavedra, Ciudad Autónoma de Buenos Aires</address>
+
+        <nav aria-label="Redes sociales">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/normacarniceria?igsh=MXZiOWo1cGc3NHQzaQ==" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+                        <img src="../assets/logos/icons8-instagram-64.png" alt="Logo de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5491161660753" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+                        <img src="../assets/logos/icons8-whatsapp-48.png" alt="Logo de WhatsApp">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

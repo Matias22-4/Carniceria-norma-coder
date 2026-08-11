@@ -3,30 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de Verduras</title>
+    <title>Tipos de verduras | Norma</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
-        <a href="../index.html" aria aria-label="Inicio" title="Inicio">
-        <figure> 
-            <img src="./assets/logo-norma.png" alt="Norma - Carniceria y Verduleria,en el barrio de Saveedra" title="Logo-Norma">
-        </figure>
-     </a>
-     <h1>Norma | Tipos de Verduras</h1>
-     <nav>
-        <ul>
-            <li>
-                    <a href="#" aria aria-label="Carniceria" title="Carniceria">Carniceria</a>
-                </li>
-                    <a href="#" aria-label="Verduleria" title="Verduleria">Verduleria</a>
-            <li>  
-                <a href="./contacto.html" aria-label="Contacto" title="Contacto">Contacto</a>
-                </li>
-            <li> 
-                <a href="./nosotros.html" aria-label="Nosotros" title="Nosotros">Nosotros</a>
-                </li>
-        </ul>
-     </nav>
+        <a href="../index.html" aria-label="Inicio" title="Inicio">
+            <figure>
+                <img src="../assets/tipos/logo-norma.png" alt="Norma - Carnicería y Verdulería, en el barrio de Saavedra" title="Logo Norma">
+            </figure>
+        </a>
+
+        <h1>Norma | Tipos de verduras</h1>
+
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="./carniceria.html" title="Carnicería">Carnicería</a></li>
+                <li><a href="./verduleria.html" aria-current="page" title="Verdulería">Verdulería</a></li>
+                <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
+                <li><a href="./nosotros.html" title="Nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <section id="introduccion">
+            <h2>Frutas y verduras de estación</h2>
+            <p>
+                Trabajamos con proveedores locales para tener siempre productos frescos,
+                de estación y al mejor precio.
+            </p>
+        </section>
+
+        <section id="verduras">
+            <h2>Verduras</h2>
+
+            <article>
+                <h3>Papa y batata</h3>
+                <p>Seleccionadas por tamaño y calidad, ideales para todo tipo de cocción.</p>
+            </article>
+
+            <article>
+                <h3>Tomate y lechuga</h3>
+                <p>Frescura diaria para tus ensaladas de todos los días.</p>
+            </article>
+
+            <article>
+                <h3>Cebolla, zanahoria y zapallo</h3>
+                <p>La base infaltable para guisos, salsas y sopas caseras.</p>
+            </article>
+        </section>
+
+        <section id="frutas">
+            <h2>Frutas</h2>
+
+            <article>
+                <h3>Manzana y pera</h3>
+                <p>Variedades de estación, dulces y crocantes.</p>
+            </article>
+
+            <article>
+                <h3>Banana y naranja</h3>
+                <p>Ideales para el desayuno o la merienda de toda la familia.</p>
+            </article>
+
+            <article>
+                <h3>Frutas de estación</h3>
+                <p>Cada temporada renovamos la oferta con lo mejor del momento: durazno, ciruela, mandarina y más.</p>
+            </article>
+        </section>
+
+        <section id="hierbas-y-otros">
+            <h2>Hierbas y otros productos</h2>
+            <article>
+                <h3>Hierbas frescas</h3>
+                <p>Perejil, ciboulette y albahaca, ideales para dar el toque final a tus platos.</p>
+            </article>
+            <article>
+                <h3>Huevos de campo</h3>
+                <p>Trabajamos con proveedores de confianza para ofrecer huevos frescos todos los días.</p>
+            </article>
+        </section>
+
+        <section id="estacionalidad">
+            <h2>Comprá según la estación</h2>
+            <p>
+                Renovamos la mercadería según la época del año, para que siempre te lleves
+                productos en su punto justo de maduración y con mejor precio. Si buscás algo
+                en particular, consultanos y te decimos qué hay disponible ese día.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Carnicería y Verdulería Norma</p>
+        <p>&copy; <span id="year"></span> Todos los derechos reservados.</p>
+        <address>Barrio de Saavedra, Ciudad Autónoma de Buenos Aires</address>
+
+        <nav aria-label="Redes sociales">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/normacarniceria?igsh=MXZiOWo1cGc3NHQzaQ==" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+                        <img src="../assets/logos/icons8-instagram-64.png" alt="Logo de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5491161660753" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+                        <img src="../assets/logos/icons8-whatsapp-48.png" alt="Logo de WhatsApp">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
