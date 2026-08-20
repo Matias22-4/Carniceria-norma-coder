@@ -16,6 +16,10 @@ header nav a {
     color: #ffffff;
 }
 
+header figure {
+    margin: 0;
+}
+
 /* ===== Títulos ===== */
 h1 {
     color: #ffffff;
@@ -60,4 +64,5 @@ nav ul {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
 }
