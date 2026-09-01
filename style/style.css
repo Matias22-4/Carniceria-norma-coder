@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ===== Fondo y tipografía general ===== */
 body {
     background-color: #faf7f2;
@@ -7,17 +14,23 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* ===== Header ===== */
+/* ===== Header (Flexbox) ===== */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #7a2e2e;
+    padding: 1rem 2rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
 }
 
 header nav a {
     color: #ffffff;
-}
-
-header figure {
-    margin: 0;
 }
 
 /* ===== Títulos ===== */
@@ -45,6 +58,27 @@ p {
     font-size: 1.2rem;
 }
 
+/* ===== Secciones (espaciado) ===== */
+section {
+    margin-bottom: 2.5rem;
+    padding: 0 2rem;
+}
+
+/* ===== Cards (Flexbox) ===== */
+.grid-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+article {
+    background-color: #ffffff;
+    border: 1px solid #e5ddd2;
+    border-radius: 8px;
+    padding: 1.2rem;
+    flex: 1 1 280px;
+}
+
 /* ===== Enlaces generales (fuera del header) ===== */
 a {
     color: #7a2e2e;
@@ -55,8 +89,6 @@ a {
 /* ===== Listas de navegación (sin viñetas) ===== */
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* ===== Logo ===== */
@@ -65,4 +97,25 @@ nav ul {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #2b2b2b;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+footer img {
+    width: 32px;
+    height: 32px;
 }
