@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #7a2e2e;
-    padding: 1rem 2rem;
+    padding: 20px 2rem;
 }
 
 header nav ul {
@@ -58,7 +58,7 @@ p {
     font-size: 1.2rem;
 }
 
-/* ===== Secciones (espaciado) ===== */
+/* ===== Secciones (espaciado general, para páginas sin grid) ===== */
 section {
     margin-bottom: 2.5rem;
     padding: 0 2rem;
@@ -75,7 +75,7 @@ article {
     background-color: #ffffff;
     border: 1px solid #e5ddd2;
     border-radius: 8px;
-    padding: 1.2rem;
+    padding: 20px;
     flex: 1 1 280px;
 }
 
@@ -118,4 +118,71 @@ footer nav ul {
 footer img {
     width: 32px;
     height: 32px;
+}
+
+/* ===== Grid maestro (Mobile-first) ===== */
+.grid-index,
+.grid-carniceria {
+    display: grid;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+/* Base mobile: 1 columna, todo apilado */
+.grid-index {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "bienvenida"
+        "productos"
+        "elegirnos"
+        "horarios"
+        "pedidos";
+}
+
+.grid-carniceria {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "introduccion"
+        "cortes"
+        "otros"
+        "recomendaciones";
+}
+
+/* Asignar cada section a su área (index.html) */
+#bienvenida { grid-area: bienvenida; }
+#nuestros-productos { grid-area: productos; }
+#por-que-elegirnos { grid-area: elegirnos; }
+#horarios-ubicacion { grid-area: horarios; }
+#pedidos { grid-area: pedidos; }
+
+/* Asignar cada section a su área (carniceria.html) */
+#introduccion { grid-area: introduccion; }
+#cortes-vacunos { grid-area: cortes; }
+#otros-cortes { grid-area: otros; }
+#recomendaciones { grid-area: recomendaciones; }
+
+/* Dentro del grid, las sections ya no necesitan su propio margin/padding */
+.grid-index section,
+.grid-carniceria section {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* ===== Breakpoint Desktop (1024px) ===== */
+@media (min-width: 1024px) {
+    .grid-index {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "bienvenida bienvenida"
+            "productos elegirnos"
+            "horarios pedidos";
+    }
+
+    .grid-carniceria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "introduccion introduccion"
+            "cortes otros"
+            "recomendaciones recomendaciones";
+    }
 }
