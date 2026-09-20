@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | Norma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html" aria-label="Inicio" title="Inicio">
+ <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a href="../index.html" aria-label="Inicio" title="Inicio" class="navbar-brand">
             <figure>
                 <img src="../assets/tipos/logo-norma.png" alt="Norma - Carnicería y Verdulería, en el barrio de Saavedra" title="Logo Norma" class="logo">
             </figure>
         </a>
 
-        <h1>Norma | Nosotros</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <nav aria-label="Menú principal">
-            <ul>
-                <li><a href="./carniceria.html" title="Carnicería">Carnicería</a></li>
-                <li><a href="./verduleria.html" title="Verdulería">Verdulería</a></li>
-                <li><a href="./contacto.html" title="Contacto">Contacto</a></li>
-                <li><a href="./nosotros.html" aria-current="page" title="Nosotros">Nosotros</a></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./carniceria.html" title="Carnicería">Carnicería</a></li>
+                <li class="nav-item"><a class="nav-link" href="./verduleria.html" title="Verdulería">Verdulería</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html" title="Contacto">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./nosotros.html" aria-current="page" title="Nosotros">Nosotros</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+</nav>
 
-    <main>
-        <section id="nuestra-historia">
-            <h2>Nuestra historia</h2>
+<h1>Norma | Nosotros</h1>
+
+<main>
+    <section id="nuestra-historia">
+        <h2>Nuestra historia</h2>
             <p class="parrafo-intro">
                 Norma nació como un pequeño local de barrio en Saavedra y, con el paso de los años,
                 se convirtió en un punto de referencia para quienes buscan carne y verdura fresca
@@ -97,7 +104,6 @@
         <p>Carnicería y Verdulería Norma</p>
         <p>&copy; <span id="year"></span> Todos los derechos reservados.</p>
         <address>Barrio de Saavedra, Ciudad Autónoma de Buenos Aires</address>
-
         <nav aria-label="Redes sociales">
             <ul>
                 <li>
@@ -114,8 +120,9 @@
         </nav>
     </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+   <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -29,16 +29,66 @@ header nav ul {
     gap: 1.5rem;
 }
 
-header nav a {
+/* ===== Enlaces generales (fuera del navbar) ===== */
+a {
+    color: #7a2e2e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    color: #d4a24c;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:active {
+    color: #4a1f1f;
+}
+
+.boton-whatsapp {
+    display: inline-block;
+    background-color: #4a7c59;
     color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-whatsapp:hover,
+.boton-whatsapp:focus {
+    background-color: #3d6849;
+    text-decoration: none;
+}
+
+.boton-whatsapp:active {
+    transform: scale(0.97);
+}
+
+/* ===== Links del navbar ===== */
+.nav-link {
+    color: #2b2b2b;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #d4a24c;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:active {
+    color: #7a2e2e;
 }
 
 /* ===== Títulos ===== */
 h1 {
-    color: #ffffff;
+    color: #7a2e2e;
     font-size: 2.5rem;
     font-weight: 700;
     font-family: 'Fraunces', serif;
+    padding: 1.5rem 2rem 0.5rem 2rem;
 }
 
 /* ===== Subtítulos ===== */
@@ -79,11 +129,11 @@ article {
     flex: 1 1 280px;
 }
 
-/* ===== Enlaces generales (fuera del header) ===== */
-a {
-    color: #7a2e2e;
-    text-decoration: none;
-    font-weight: 600;
+/* ===== Carousel ===== */
+.carousel-item img {
+    height: 400px;
+    object-fit: contain;
+    background-color: #2b2b2b;
 }
 
 /* ===== Listas de navegación (sin viñetas) ===== */
@@ -155,8 +205,9 @@ footer img {
 #horarios-ubicacion { grid-area: horarios; }
 #pedidos { grid-area: pedidos; }
 
-/* Asignar cada section a su área (carniceria.html) */
+/* ===== Asignar cada section a su área (carniceria.html) ===== */
 #introduccion { grid-area: introduccion; }
+.area-galeria { grid-area: galeria; }
 #cortes-vacunos { grid-area: cortes; }
 #otros-cortes { grid-area: otros; }
 #recomendaciones { grid-area: recomendaciones; }
@@ -178,11 +229,12 @@ footer img {
             "horarios pedidos";
     }
 
-    .grid-carniceria {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "introduccion introduccion"
-            "cortes otros"
-            "recomendaciones recomendaciones";
-    }
+   .grid-carniceria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "introduccion introduccion"
+        "galeria galeria"
+        "cortes otros"
+        "recomendaciones recomendaciones";
+}
 }
