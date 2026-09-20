@@ -92,7 +92,8 @@ h1 {
 }
 
 /* ===== Subtítulos ===== */
-h2, h3 {
+h2,
+h3 {
     font-family: 'Fraunces', serif;
     font-weight: 600;
     color: #7a2e2e;
@@ -210,24 +211,63 @@ footer img {
 }
 
 /* Asignar cada section a su área (index.html) */
-#bienvenida { grid-area: bienvenida; }
-#nuestros-productos { grid-area: productos; }
-#por-que-elegirnos { grid-area: elegirnos; }
-#horarios-ubicacion { grid-area: horarios; }
-#pedidos { grid-area: pedidos; }
+#bienvenida {
+    grid-area: bienvenida;
+}
+
+#nuestros-productos {
+    grid-area: productos;
+}
+
+#por-que-elegirnos {
+    grid-area: elegirnos;
+}
+
+#horarios-ubicacion {
+    grid-area: horarios;
+}
+
+#pedidos {
+    grid-area: pedidos;
+}
 
 /* Asignar cada section a su área (carniceria.html) */
-#introduccion { grid-area: introduccion; }
-.area-galeria { grid-area: galeria; }
-#cortes-vacunos { grid-area: cortes; }
-#otros-cortes { grid-area: otros; }
-#recomendaciones { grid-area: recomendaciones; }
+#introduccion {
+    grid-area: introduccion;
+}
+
+.area-galeria {
+    grid-area: galeria;
+}
+
+#cortes-vacunos {
+    grid-area: cortes;
+}
+
+#otros-cortes {
+    grid-area: otros;
+}
+
+#recomendaciones {
+    grid-area: recomendaciones;
+}
 
 /* Asignar cada section a su área (verduleria.html) */
-#verduras { grid-area: verduras; }
-#frutas { grid-area: frutas; }
-#hierbas-y-otros { grid-area: hierbas; }
-#estacionalidad { grid-area: estacionalidad; }
+#verduras {
+    grid-area: verduras;
+}
+
+#frutas {
+    grid-area: frutas;
+}
+
+#hierbas-y-otros {
+    grid-area: hierbas;
+}
+
+#estacionalidad {
+    grid-area: estacionalidad;
+}
 
 /* Dentro del grid, las sections ya no necesitan su propio margin/padding */
 .grid-index section,
